@@ -1,0 +1,21 @@
+﻿@model IEnumerable<EFCoreTableMapping.Models.Customer>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customers</title>
+</head>
+<body>
+
+    <h1>Customers List:</h1>
+
+    <ul>
+        @foreach (var customer in Model)
+        {
+            <li>@customer.Name | @customer.Email</li>
+        }
+    </ul>
+
+</body>
+</html>
+
